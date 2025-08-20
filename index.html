@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>润滑设备 - JZRH</title>
+<style>
+  /* 基本样式 */
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, #0a74da, #00aaff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header .logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background: url('https://via.placeholder.com/120.png?text=JZRH') no-repeat center/contain;
+    border-radius: 50%;
+    animation: logo-spin 6s linear infinite;
+  }
+
+  @keyframes logo-spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    animation: fadeInUp 1.5s ease forwards;
+  }
+
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
+  }
+
+  /* 产品区 */
+  section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #0a74da;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+
+  .product-card:nth-child(1) { animation-delay: 0.2s; }
+  .product-card:nth-child(2) { animation-delay: 0.4s; }
+  .product-card:nth-child(3) { animation-delay: 0.6s; }
+
+  .product-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+
+  .product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
+  }
+
+  /* 联系方式 */
+  .contact {
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .order-phone {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ffeb3b;
+    background: #0a74da;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1);}
+    100% { transform: scale(1);}
+  }
+
+  footer {
+    background: #0a74da;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  @media(max-width:600px){
+    .products {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"></div>
+  <h1>润滑设备</h1>
+  <p>高品质工业润滑系统解决方案</p>
+</header>
+
+<section>
+  <h2>我们的产品</h2>
+  <div class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/100.png?text=Pump1" alt="润滑泵1">
+      <h3>润滑泵 1</h3>
+      <p>工业设备适用，高效稳定</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/100.png?text=Pump2" alt="润滑泵2">
+      <h3>润滑泵 2</h3>
+      <p>高精度控制，延长寿命</p>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/100.png?text=Pump3" alt="润滑泵3">
+      <h3>润滑泵 3</h3>
+      <p>通用机械润滑应用</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>联系我们</h2>
+  <p>订购电话: <span class="order-phone">182-0787-405</span></p>
+  <p>邮箱: info@jzrh.cn</p>
+  <p>地址: 中国某市工业区润滑设备有限公司</p>
+</section>
+
+<footer>
+  &copy; 2025 润滑设备 JZRH. All rights reserved.
+</footer>
+
+</body>
+</html>
